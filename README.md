@@ -84,6 +84,11 @@ I have used the standard lenet model taught in the class and made a few adjustme
 2) Added dropout to avoid overfitting of data - This was resulting in better validation accuracy.
 3) Used tanh activations instead of relu - This was resulting in better validation accuracy.
 
+Here is a description of the model
+
+![Alt text](./markup_images/network_description.png?raw=true "Title")
+
+
 ---
 
 ### 5) Model training and validation
@@ -106,7 +111,11 @@ I acquired 5 images from the wikipedia page of german signs. The model was able 
 
 It wasn't able to classify the image with 60 Km/hr sign.
 
+The images I have taken are fairly well standardised and should be reasonably easily to classify. The network is being able to classify shapes like bumpy road but is having a hard time differentiating between the numbers. The 60 km/hr image is being confused with 50 and 40km/h. Although digit recognition is a fairly well solved problem in the context of deep learning, it might not be working well here because the network hasn't specifically bein given data on numbers only.
+
 Looking at the softmax probability, I saw that 60km/hr was within the top3 predictions for this image.
+
+
 
 ### 8) Visualizing the network
 
